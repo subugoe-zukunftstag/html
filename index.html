@@ -78,8 +78,7 @@
 	  </section>
 	</section>
 
-	
-	<section><!-- HTML -->
+	<section><!-- Einführung -->	
 	  <section>
 	    <h2>HTML</h2>
 	    <h3>Die Sprache des Internets</h3>
@@ -93,7 +92,7 @@
 		mit <span class="em">Tags</span>.</li>
 	    </ul>
 	  </section>
-
+	  
 	  <section>
 	    <h3>Tags</h3>
 	    <ul>
@@ -105,6 +104,7 @@
 	      <li>Einfache Tags sind z.B. <span class="em">&lt;img src="bild.jpg" /&gt;</span></li>
 	    </ul>
 	  </section>
+	  
 	  <section>
 	    <h3>Aufgabe:</h3>
 	    <ul>
@@ -115,6 +115,7 @@
 		dann auf soetwas wie "Quellcode anzeigen"</li>
 	    </ul>
 	  </section>
+
 	  <section>
 	    <h3>Wichtige Tags</h3>
 	    <ul>
@@ -125,11 +126,11 @@
 		</ul>
 	      </li>
 	      <li>Im Seitenkopf werden Dinge "über" die Seite definiert, wie
-	      z.B. 
+		z.B. 
 		<ul>
 		  <li>die Sprache in der die Seite geschrieben ist</li>
 		  <li>eventuelles CSS (das MakeUp) macht die Seiten bunt und
-		  hübsch</li>
+		    hübsch</li>
 		  <li>Javascript (der Motor) macht die Seiten dynamisch</li>
 		</ul>
 	      </li>
@@ -154,9 +155,12 @@
 	      <span class="blue">&lt;/html&gt;</span><br />
 	    </div>
 	  </section>
-	  
+	</section>
+	
+	<section><!-- Selber machen -->
 	  <section>
 	    <h3>Ein paar Tags zum Rumspielen</h3>
+	    <h5>(alle inerhalb des: Body schreiben)</h5>
 	    <div style="text-align:left">
 	      <span class="orange">&lt;p&gt;</span>Eigentlicher Text für den Abschnitt (Paragraph)<span class="orange">&lt;p&gt;</span><br >
 	      <span class="orange">&lt;ul&gt;</span><br />
@@ -171,36 +175,35 @@
 	    <h3>Aufgabe</h3>
 	    <ul>
 	      <li>Öffnet einen Editor und schreibt eine eigene HTML-Seite mit den
-	    vorgeschlagenen Tags</li>
+		vorgeschlagenen Tags</li>
 	      <li>Schreibt ein paar Pagagraphen über euch, oder ein Thema,
-	      dass euch interessiert.</li>
+		dass euch interessiert.</li>
 	      <li>Ladet ein paar Bilder vom Internet runter und baut sie in
-	      eure Seite ein.</li>
+		eure Seite ein.</li>
 	      <li>Speichert eure Datei mit einem Namen der
-	      mit <span class="em">.html</span> endet und ruft sie im Browser
-	      auf</li>
+		mit <span class="em">.html</span> endet und ruft sie im Browser
+		auf</li>
 	    </ul>
 	  </section>
 	</section>
 	
-
-	  <section id="smiley">
-	    <script>
-	      $(document).keyup(function(event) {
-                if (Reveal.getCurrentSlide().id == "smiley") {
-	          setTimeout(function() {
-	            $("#smileycon")
-	              .animate({
-	                "font-size":"8em"
-	              }, "slow")
-	          }, 500)
-	        }
-	      });
+	
+	<section id="smiley">
+	  <script>
+	    $(document).keyup(function(event) {
+            if (Reveal.getCurrentSlide().id == "smiley") {
+	    setTimeout(function() {
+	    $("#smileycon")
+	    .animate({
+	    "font-size":"8em"
+	    }, "slow")
+	    }, 500)
+	    }
+	    });
 	    </script>
-	    <h3>Viel Spaß beim Schreiben von Webseiten!</h3>
-	    <h6 id="smileycon">:)</h6>
-
-	  </section>
+	  <h3>Viel Spaß beim Schreiben von Webseiten!</h3>
+	  <h6 id="smileycon">:)</h6>
+	  
 	</section>
 
 	<style>
