@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Zukunftstag 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+    <link href="lightbox/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script src="lightbox/js/jquery-1.10.2.min.js"></script>
+    <script src="lightbox/js/lightbox-2.6.min.js"></script>
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+    <style>
+      body {
+      background: #282828;
+      }
+      .reveal {
+      background: transparent url("youtubePageSource-t.png");
+      }
+      span.red {
+      color: #ff6666;
+      }
+      span.blue {
+      color: #6666ff;
+      }
+      span.yellow {
+      color: #eeee00;
+      }
+      span.orange {
+      color: #ffaa33;
+      }
+      span.lila {
+      color: #aa33ff;
+      }
+      span.green {
+      color: #66ff66;
+      }
+      div.text {
+      text-align: center;
+      }
+      .bild {
+      height: 100px;
+      border: 0px;
+      }
+      .em {
+      color: #ffaa33;
+      }
+      .reg {
+      color: white;
+      }
+    </style>
+    <script>
+      $(document).ready(function() {
+      });
+    </script>
+  </head>
+
+  <body>
+    <div style="position: fixed; top: 5px;left:5px"><img src="images/boys-day-logo.png"></div>
+    <div style="position: fixed; top: 5px;right:5px"><img src="images/girls-day-logo.png"></div>
+    <div class="reveal">
+      <div class="slides">
+
+	<section><!-- Einführung -->
+	  <section><!-- Einführung - Agenda -->
+	    <h1>Zukunftstag 28.04.2016</h1>
+	    <h3>HTML, die Sprache der Webseiten</h3>
+	  </section>
+	</section>
+
+	
+	<section><!-- HTML -->
+	  <section>
+	    <h2>HTML</h2>
+	    <h3>Die Sprache des Internets</h3>
+	    <ul>	    
+	      <li>Alle Seiten im Internet sind in HTML geschrieben.</li>
+	      <li>HTML ist
+		eine <span class="em">Auszeichnungssprache</span>.</li>
+	      <li>Alle Teile des Textes
+		sind <span class="em">ausgezeichnet</span>.</li>
+	      <li>Die Auszeichnung geschieht
+		mit <span class="em">Tags</span>.</li>
+	    </ul>
+	  </section>
+
+	  <section>
+	    <h3>Tags</h3>
+	    <ul>
+	      <li>Tags sind Bezeichner, die in spitze Klammern geschrieben werden
+		und Textteile markieren.</li>
+	      <li>Es gibt Tags die geöffnet und geschlossen werden, und welche,
+		die alleine stehen.</li>
+	      <li>Doppelte Tags sind z.B. <span class="em">&lt;body&gt;&lt;/body&gt;</span></li>
+	      <li>Einfache Tags sind z.B. <span class="em">&lt;img src="bild.jpg" /&gt;</span></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Aufgabe:</h3>
+	    <ul>
+	      <li>Schaut euch mal den <span class="em">Quelltext</span> von ein paar
+		eurer Lieblingswebseiten an, und kuckt, welche Tags ihr finden
+		könnt.</li>
+	      <li>Klickt dazu mit der rechten Maustaste auf die Seite und klickt
+		dann auf soetwas wie "Quellcode anzeigen"</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Wichtige Tags</h3>
+	    <ul>
+	      <li>HTML-Seiten bestehen aus zwei wichtigen Teilen:
+		<ul>
+		  <li>Seitenkopf <span class="em">&lt;head&gt;&lt;/head&gt;</span></li>
+		  <li>Seitenkörpe <span class="em">&lt;body&gt;&lt;/body&gt;</span></li>
+		</ul>
+	      </li>
+	      <li>Im Seitenkopf werden Dinge "über" die Seite definiert, wie
+	      z.B. 
+		<ul>
+		  <li>die Sprache in der die Seite geschrieben ist</li>
+		  <li>eventuelles CSS (das MakeUp) macht die Seiten bunt und
+		  hübsch</li>
+		  <li>Javascript (der Motor) macht die Seiten dynamisch</li>
+		</ul>
+	      </li>
+	    </ul>
+	  </section>
+	  
+	  <section>
+	    <h3>Das HTML Grundgerüst</h3>
+	    <div style="text-align: left;">
+	      <span class="blue">&lt;!DOCTYPE html&gt;</span><br />
+	      <span class="blue">&lt;html lang=de&gt;</span><br />
+	      <span class="red">&nbsp;&nbsp;&lt;head&gt;</span><br />
+	      <span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;</span></br>
+	      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      Hier kommt Admin-Kram hin: Seitentitel, Scripte, CSS
+	      <span class="red">&lt;/title&gt;</span><br />
+	      <span class="red">&nbsp;&nbsp;&lt;/head&gt;</span><br />
+	      <span class="green">&nbsp;&nbsp;&lt;body&gt;</span><br />
+	      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	      Hier steht, was man später auf der Webseite sieht</br>
+	      <span class="green">&nbsp;&nbsp;&lt;/body&gt;</span><br />
+	      <span class="blue">&lt;/html&gt;</span><br />
+	    </div>
+	  </section>
+	  
+	  <section>
+	    <h3>Ein paar Tags zum Rumspielen</h3>
+	    <div style="text-align:left">
+	      <span class="orange">&lt;p&gt;</span>Eigentlicher Text für den Abschnitt (Paragraph)<span class="orange">&lt;p&gt;</span><br >
+	      <span class="orange">&lt;ul&gt;</span><br />
+	      &nbsp;&nbsp;<span class="orange">&lt;li&gt;</span>Listenelement 1<br />
+	      &nbsp;&nbsp;<span class="orange">&lt;li&gt;</span>Listenelement 2<br />
+	      &nbsp;&nbsp;<span class="orange">&lt;/ul&gt;</span><br />
+	      <span class="orange">&lt;img src="</span>bildname.jpg<span class="orange">"&gt;</span><br />
+	    </div>
+	  </section>
+	  
+	  <section>
+	    <h3>Aufgabe</h3>
+	    <ul>
+	      <li>Öffnet einen Editor und schreibt eine eigene HTML-Seite mit den
+	    vorgeschlagenen Tags</li>
+	      <li>Schreibt ein paar Pagagraphen über euch, oder ein Thema,
+	      dass euch interessiert.</li>
+	      <li>Ladet ein paar Bilder vom Internet runter und baut sie in
+	      eure Seite ein.</li>
+	      <li>Speichert eure Datei mit einem Namen der
+	      mit <span class="em">.html</span> endet und ruft sie im Browser
+	      auf</li>
+	    </ul>
+	  </section>
+	</section>
+	
+
+	  <section id="smiley">
+	    <script>
+	      $(document).keyup(function(event) {
+                if (Reveal.getCurrentSlide().id == "smiley") {
+	          setTimeout(function() {
+	            $("#smileycon")
+	              .animate({
+	                "font-size":"8em"
+	              }, "slow")
+	          }, 500)
+	        }
+	      });
+	    </script>
+	    <h3>Viel Spaß beim Schreiben von Webseiten!</h3>
+	    <h6 id="smileycon">:)</h6>
+
+	  </section>
+	</section>
+
+	<style>
+	  .moveRight {
+	  position: absolute;
+	  }
+	</style>
+	<script>
+	  $("h1:contains('JavaScript')").hover(function() {
+	  $(".moveRight").animate({ "marginLeft": "+500px"}, "slow");
+	  });
+	  $("h1:contains('JavaScript')").mouseleave(function() {
+	  $(".moveRight").animate({ "marginLeft": "-500px"}, "slow");
+	  });
+
+	</script><!-- Javascript -->
+
+
+	</div>
+      </div>
+
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+	controls: true,
+	progress: true,
+	history: true,
+	center: true,
+	theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+	transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+	// Parallax scrolling
+	// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+	// parallaxBackgroundSize: '2100px 900px',
+	// Optional libraries used to extend on reveal.js
+	dependencies: [
+	{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+	{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+	{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+	{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+	{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+	]
+	});
+      </script>
+  </body>
+</html>
